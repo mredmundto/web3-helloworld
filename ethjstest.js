@@ -3,7 +3,9 @@ const Eth = require('ethjs');
 const eth = new Eth(new Eth.HttpProvider('https://ropsten.infura.io/SYGRk61NUc3yN4NNRs60'));
 
 // Load crowdsale contract
-var crowdsaleAddress = "0x9f5a27e6d2323196e195743f28fbe817988dfdef";  // Ropsten address
+// var crowdsaleAddress = "0x9f5a27e6d2323196e195743f28fbe817988dfdef";  // old Ropsten address
+var crowdsaleAddress = "0x84def590841e04465324417e1df30a93f8574b17";  // new Ropsten address
+
 //var crowdsaleAddress = "0x0fADd0F343cF32b5B0c3C3830Fb1dCaa6d6cb80e";  // Local geth test
 var crowdsaleABIFile = "SelfKeyCrowdsale.json";
 var crowdsaleSpecs = JSON.parse(fs.readFileSync("./build/contracts/" + crowdsaleABIFile));
